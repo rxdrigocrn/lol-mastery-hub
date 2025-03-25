@@ -61,11 +61,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-sm text-muted-foreground">
-            Enter "Faker" or "test" to explore demo data
-          </p>
-        </div>
+       
       </div>
     </div>
   );
