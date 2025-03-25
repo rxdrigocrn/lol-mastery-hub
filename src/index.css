@@ -1,0 +1,114 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Beaufort';
+  src: url('https://ff.cdn.nexon.com/lol/static/fonts/BeaufortforLOL-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Spiegel';
+  src: url('https://ff.cdn.nexon.com/lol/static/fonts/Spiegel_TT_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --background: 221 39% 7%;
+    --foreground: 49 55% 85%;
+
+    --card: 221 47% 11%;
+    --card-foreground: 49 55% 85%;
+
+    --popover: 221 47% 11%;
+    --popover-foreground: 49 55% 85%;
+
+    --primary: 184 89% 42%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 40 51% 51%;
+    --secondary-foreground: 221 39% 7%;
+
+    --muted: 221 21% 21%;
+    --muted-foreground: 49 30% 65%;
+
+    --accent: 40 51% 51%;
+    --accent-foreground: 221 39% 7%;
+
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 221 21% 21%;
+    --input: 221 21% 21%;
+    --ring: 184 89% 42%;
+
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-border selection:bg-lol-blue/20 selection:text-lol-light;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: url('https://universe.leagueoflegends.com/images/champBg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .lol-glass {
+    @apply backdrop-blur-md border border-lol-blue/20;
+  }
+  
+  .lol-card {
+    @apply bg-gradient-to-b from-card to-card/80 border border-lol-blue/20 shadow-lg shadow-black/20 rounded-md overflow-hidden transition-all duration-300;
+  }
+  
+  .lol-button {
+    @apply px-6 py-2 bg-lol-blue text-white font-beaufort font-bold uppercase tracking-wider rounded hover:bg-lol-blue/80 transition-all duration-300 disabled:opacity-50 disabled:pointer-events-none;
+  }
+  
+  .lol-input {
+    @apply bg-muted border border-border rounded-md px-4 py-2 text-foreground focus:border-lol-blue focus:ring-1 focus:ring-lol-blue outline-none transition-all duration-300;
+  }
+  
+  .page-transition {
+    @apply animate-fade-in;
+  }
+  
+  .champion-card-hover {
+    @apply hover:scale-105 hover:shadow-xl hover:shadow-lol-blue/20 transition-all duration-300;
+  }
+  
+  .mastery-1 { @apply bg-gray-600; }
+  .mastery-2 { @apply bg-gray-400; }
+  .mastery-3 { @apply bg-blue-600; }
+  .mastery-4 { @apply bg-purple-600; }
+  .mastery-5 { @apply bg-purple-800; }
+  .mastery-6 { @apply bg-red-600; }
+  .mastery-7 { @apply bg-lol-gold; }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 5px rgba(10, 200, 185, 0.7);
+  }
+  
+  .border-glow {
+    box-shadow: 0 0 5px rgba(10, 200, 185, 0.7);
+  }
+}
