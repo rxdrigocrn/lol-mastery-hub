@@ -56,13 +56,13 @@ const SearchBar = () => {
             value={tag}
             onChange={(e) => setTag(e.target.value)}
             placeholder="Enter tag..."
-            className="lol-input w-28 px-4 py-6 border-lol-blue/20 focus:border-lol-blue/50 bg-black/40 text-lol-light shadow-inner shadow-black/30"
+            className="lol-input w-24 px-4 py-6 border-lol-blue/20 focus:border-lol-blue/50 bg-black/40 text-lol-light shadow-inner shadow-black/30"
             disabled={isLoading}
           />
         </div>
         <Button
           type="submit"
-          className="absolute right-0 h-full px-6 font-beaufort bg-lol-blue text-white tracking-wider hover:bg-lol-blue/80 transition-all duration-300 rounded-r-md border-l border-lol-blue/30"
+          className="absolute -right-6 h-full px-6 font-beaufort bg-lol-blue text-white tracking-wider hover:bg-lol-blue/80 transition-all duration-300 rounded-r-md border-l border-lol-blue/30"
           disabled={isLoading}
         >
           {isLoading ? (
