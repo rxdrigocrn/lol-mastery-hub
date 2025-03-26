@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const DDRAGON_BASE_URL = 'https://ddragon.leagueoflegends.com/cdn';
 const DDRAGON_VERSION = '13.10.1';
-const API_KEY = "RGAPI-21bd17e2-f1ba-46be-ba7d-6929a3bb4405";
+const API_KEY = "RGAPI-0e365af2-9e8e-4c54-a7eb-a1e9aa819ec7";
 
 export async function fetchSummonerData(summonerName: string, tag: string) {
   const response = await axios.get(
