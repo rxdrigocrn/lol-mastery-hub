@@ -2,7 +2,7 @@
 
 ## **Descrição**
 
-O **LoL Mastery Search** é uma aplicação interativa que permite buscar informações detalhadas sobre os usuários do **League of Legends**. Usando a API da **Riot Games** e o **Data Dragon**, o sistema fornece dados sobre a maestria dos campeões, últimas partidas jogadas, estatísticas de maestria e uma lore rápida sobre cada campeão. Através dessa ferramenta, é possível ver não apenas os campeões jogados, mas também analisar o desempenho do jogador com cada um deles.
+O **LoL Mastery Search** é uma aplicação interativa que permite buscar informações detalhadas sobre os usuários do **League of Legends**. Usando a API da **Riot Games** e o **Data Dragon**, o sistema fornece dados sobre a maestria dos campeões,e uma lore rápida sobre cada campeão.
 
 ## **Funcionalidades**
 
@@ -41,7 +41,7 @@ Após a busca, os seguintes dados estarão disponíveis:
 ## **Instruções para Executar o Projeto Localmente**
 
 ### **Pré-requisitos**
-
+- API Key da riot 
 - Node.js (Recomendado versão 16 ou superior)
 - NPM ou Yarn
 
